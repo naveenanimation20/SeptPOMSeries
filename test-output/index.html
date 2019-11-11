@@ -153,7 +153,7 @@
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
-	at com.qa.hubspot.tests.LoginPageTest.verifyLoginPagTitleTest(LoginPageTest.java:36)
+	at com.qa.hubspot.tests.LoginPageTest.verifyLoginPagTitleTest(LoginPageTest.java:42)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -218,7 +218,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;5&quot; name=&quot;Hub Spot Test Suite&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.qa.hubspot.listeners.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.qa.hubspot.listeners.TestAllureListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;5&quot; name=&quot;hub spot regression Test&quot;&gt;
     &lt;classes&gt;
@@ -264,22 +264,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
+data.setCell(0, 1, 'verifyLoginPagTitleTest')
 data.setCell(0, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(0, 3, 3297);
+data.setCell(0, 3, 10082);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginPagTitleTest')
+data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(1, 3, 63);
+data.setCell(1, 3, 9721);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifySignUpLinkTest')
 data.setCell(2, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(2, 3, 45);
+data.setCell(2, 3, 5115);
 window.suiteTableData['Hub_Spot_Test_Suite']= { tableData: data, tableDiv: 'times-div-Hub_Spot_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Hub_Spot_Test_Suite">
               </div> <!-- times-div-Hub_Spot_Test_Suite -->
             </div> <!-- times-div -->
@@ -314,19 +314,19 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyLoginPagTitleTest</span>
-                <span class="method-start">6981 ms</span>
+                <span class="method-start">7854 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifySignUpLinkTest</span>
-                <span class="method-start">7635 ms</span>
+                <span class="method-start">18549 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">7683 ms</span>
+                <span class="method-start">23668 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10981 ms</span>
+                <span class="method-start">33392 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

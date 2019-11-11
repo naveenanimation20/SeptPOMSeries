@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Hub Spot Test Suite]">
   <listeners>
-    <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.hubspot.listeners.TestAllureListener"/>
   </listeners>
   <test thread-count="5" verbose="5" name="hub spot regression Test(failed)">
     <classes>
