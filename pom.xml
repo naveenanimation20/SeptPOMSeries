@@ -76,7 +76,11 @@
 			<version>1.0-beta</version>
 		</dependency>
      
-     
+     <dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.5</version>
+		</dependency>
      
   </dependencies>
 </project>

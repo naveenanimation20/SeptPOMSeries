@@ -33,7 +33,7 @@ public class LoginPageTest {
 
 	@Test(priority = 1)
 	public void verifyLoginPagTitleTest() {
-		Assert.assertEquals(loginPage.getPageTitle(), Constants.Login_PAGE_TITLE, "Login page title is mismatched...");
+		Assert.assertEquals(loginPage.getPageTitle(), "hh", "Login page title is mismatched...");
 	}
 
 	@Test(priority = 2)
