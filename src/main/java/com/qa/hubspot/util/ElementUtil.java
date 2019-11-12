@@ -7,6 +7,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Step;
+
 public class ElementUtil {
 
 	WebDriver driver;
@@ -21,6 +23,7 @@ public class ElementUtil {
 	 * @param locator
 	 * @return
 	 */
+	@Step("getting element with {0}")
 	public WebElement getElement(By locator) {
 		WebElement element = null;
 		try {
@@ -48,6 +51,7 @@ public class ElementUtil {
 	 * 
 	 * @param locator
 	 */
+	@Step("clicking on element : {0}")
 	public void doClick(By locator) {
 		try {
 			getElement(locator).click();
@@ -75,6 +79,8 @@ public class ElementUtil {
 	 * @param locator
 	 * @param value
 	 */
+	
+	@Step("send keys a value to this element : {0}")
 	public void doSendKeys(By locator, String value) {
 		try {
 			getElement(locator).sendKeys(value);
@@ -105,6 +111,7 @@ public class ElementUtil {
 		}
 	}
 
+	@Step("checking element : {0} is displayed....")
 	public boolean isElementDisplayed(By locator) {
 		try {
 			getElement(locator).isDisplayed();

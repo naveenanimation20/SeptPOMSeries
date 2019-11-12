@@ -5,7 +5,10 @@
 
 	<listeners>
 <!-- 		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
- -->		<listener class-name="com.qa.hubspot.listeners.TestAllureListener" />
+ -->		
+ 
+ <listener class-name="com.qa.hubspot.listeners.TestAllureListener" />
+ <!-- <listener class-name="com.qa.hubspot.listeners.pdfListener" /> -->
 
 	</listeners>
 

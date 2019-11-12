@@ -4,22 +4,29 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
+import com.qa.hubspot.listeners.TestAllureListener;
 import com.qa.hubspot.pages.LoginPage;
 import com.qa.hubspot.util.Constants;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 
+@Listeners(TestAllureListener.class)
+@Epic("JIRA-101: login page related test cases...")
+@Feature("US-105: different test cases for login page for hub spot application....")
 public class LoginPageTest {
 
 	// BM - T - AM
-
 	BasePage basePage;
 	Properties prop;
 	WebDriver driver;
@@ -39,7 +46,9 @@ public class LoginPageTest {
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void verifyLoginPagTitleTest() {
-		Assert.assertEquals(loginPage.getPageTitle(), "hh", "Login page title is mismatched...");
+		Reporter.log("starting verifyLoginPagTitleTest ");
+		Assert.assertEquals(loginPage.getPageTitle(), Constants.Login_PAGE_TITLE, "Login page title is mismatched...");
+		Reporter.log("ending verifyLoginPagTitleTest ");
 	}
 
 	@Description("verify sign up link test..")
