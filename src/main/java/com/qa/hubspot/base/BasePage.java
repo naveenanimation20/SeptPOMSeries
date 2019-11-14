@@ -40,8 +40,8 @@ public class BasePage {
 			//driver = new ChromeDriver();
 			///Users/NaveenKhunteta/Documents/workspace/SeptBatchPOMSeries/src/test/resources/drivers/chromedriver
 
-			System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
-			//WebDriverManager.chromedriver().operatingSystem(OperatingSystem.LINUX).setup();
+			//System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
+			WebDriverManager.chromedriver().operatingSystem(OperatingSystem.LINUX).setup();
 			tldriver.set(new ChromeDriver());
 		} else if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
