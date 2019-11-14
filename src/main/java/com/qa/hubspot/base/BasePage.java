@@ -35,8 +35,11 @@ public class BasePage {
 	public WebDriver init_driver(String browserName) {
 
 		if (browserName.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			//driver = new ChromeDriver();
+			///Users/NaveenKhunteta/Documents/workspace/SeptBatchPOMSeries/src/test/resources/drivers/chromedriver
+
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver");
 			tldriver.set(new ChromeDriver());
 		} else if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
