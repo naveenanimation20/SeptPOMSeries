@@ -4,29 +4,55 @@
     <line>
       <![CDATA[starting verifyLoginPagTitleTest ]]>
     </line>
+    <line>
+      <![CDATA[ending verifyLoginPagTitleTest ]]>
+    </line>
   </reporter-output>
-  <suite name="Hub Spot Test Suite" duration-ms="37008" started-at="2019-11-12T01:46:49Z" finished-at="2019-11-12T01:47:26Z">
+  <suite name="Default suite" duration-ms="46717" started-at="2019-11-14T04:59:32Z" finished-at="2019-11-14T05:00:18Z">
     <groups>
     </groups>
-    <test name="hub spot regression Test" duration-ms="37008" started-at="2019-11-12T01:46:49Z" finished-at="2019-11-12T01:47:26Z">
+    <test name="Default test" duration-ms="46717" started-at="2019-11-14T04:59:32Z" finished-at="2019-11-14T05:00:18Z">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@4cc547a]" name="setUp" is-config="true" duration-ms="10647" started-at="2019-11-12T01:46:49Z" finished-at="2019-11-12T01:47:00Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@770d0ea6]" name="setUp" is-config="true" duration-ms="9701" started-at="2019-11-14T04:59:32Z" finished-at="2019-11-14T04:59:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyLoginPagTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@4cc547a]" name="verifyLoginPagTitleTest" duration-ms="10115" started-at="2019-11-12T01:47:00Z" finished-at="2019-11-12T01:47:10Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="verifyLoginPagTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@770d0ea6]" name="verifyLoginPagTitleTest" duration-ms="10111" started-at="2019-11-14T04:59:41Z" finished-at="2019-11-14T04:59:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[starting verifyLoginPagTitleTest ]]>
+            </line>
+            <line>
+              <![CDATA[ending verifyLoginPagTitleTest ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPagTitleTest -->
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@770d0ea6]" name="verifySignUpLinkTest" duration-ms="5069" started-at="2019-11-14T04:59:52Z" finished-at="2019-11-14T04:59:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpLinkTest -->
+        <test-method status="FAIL" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@770d0ea6]" name="loginTest" duration-ms="20748" started-at="2019-11-14T04:59:57Z" finished-at="2019-11-14T05:00:18Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Login page title is mismatched... expected [hh] but found [HubSpot Login]]]>
+              <![CDATA[Expected condition failed: waiting for title to contain "Reports dashboard". Current title: "HubSpot Login" (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Naveen-Mac.local', ip: 'fe80:0:0:0:c15:ca48:c8cf:32b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/fd/lw5s91x96f9...}, goog:chromeOptions: {debuggerAddress: localhost:59613}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd25b392b1d9d9dfb166396ac7955fc2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login page title is mismatched... expected [hh] but found [HubSpot Login]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at com.qa.hubspot.tests.LoginPageTest.verifyLoginPagTitleTest(LoginPageTest.java:50)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Reports dashboard". Current title: "HubSpot Login" (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Naveen-Mac.local', ip: 'fe80:0:0:0:c15:ca48:c8cf:32b4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/fd/lw5s91x96f9...}, goog:chromeOptions: {debuggerAddress: localhost:59613}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd25b392b1d9d9dfb166396ac7955fc2
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.qa.hubspot.util.ElementUtil.waitForTitlePresent(ElementUtil.java:45)
+at com.qa.hubspot.pages.LoginPage.doLogin(LoginPage.java:50)
+at com.qa.hubspot.tests.LoginPageTest.loginTest(LoginPageTest.java:65)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,26 +80,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[starting verifyLoginPagTitleTest ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPagTitleTest -->
-        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@4cc547a]" name="verifySignUpLinkTest" duration-ms="5056" started-at="2019-11-12T01:47:11Z" finished-at="2019-11-12T01:47:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignUpLinkTest -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@4cc547a]" name="loginTest" duration-ms="9673" started-at="2019-11-12T01:47:16Z" finished-at="2019-11-12T01:47:26Z">
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@4cc547a]" name="tearDown" is-config="true" duration-ms="127" started-at="2019-11-12T01:47:26Z" finished-at="2019-11-12T01:47:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@770d0ea6]" name="tearDown" is-config="true" duration-ms="99" started-at="2019-11-14T05:00:18Z" finished-at="2019-11-14T05:00:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-    </test> <!-- hub spot regression Test -->
-  </suite> <!-- Hub Spot Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

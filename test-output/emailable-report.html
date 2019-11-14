@@ -8,18 +8,22 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Hub Spot Test Suite</th></tr>
-<tr><td><a href="#t0">hub spot regression Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">37,008</td><td></td><td></td></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">46,717</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hub Spot Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">hub spot regression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m0">verifyLoginPagTitleTest</a></td><td rowspan="1">1573523220176</td><td rowspan="1">10115</td></tr><tr><th colspan="4">hub spot regression Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1573523236682</td><td rowspan="1">9673</td></tr><tr class="passedeven"><td><a href="#m2">verifySignUpLinkTest</a></td><td rowspan="1">1573523231622</td><td rowspan="1">5056</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1573707597252</td><td rowspan="1">20748</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m1">verifyLoginPagTitleTest</a></td><td rowspan="1">1573707581961</td><td rowspan="1">10111</td></tr><tr class="passedeven"><td><a href="#m2">verifySignUpLinkTest</a></td><td rowspan="1">1573707592181</td><td rowspan="1">5069</td></tr></tbody>
 </table>
-<h2>hub spot regression Test</h2><h3 id="m0">com.qa.hubspot.tests.LoginPageTest#verifyLoginPagTitleTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">starting verifyLoginPagTitleTest </div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login page title is mismatched... expected [hh] but found [HubSpot Login]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at com.qa.hubspot.tests.LoginPageTest.verifyLoginPagTitleTest(LoginPageTest.java:50)
+<h2>Default test</h2><h3 id="m0">com.qa.hubspot.tests.LoginPageTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Reports dashboard&quot;. Current title: &quot;HubSpot Login&quot; (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Naveen-Mac.local&apos;, ip: &apos;fe80:0:0:0:c15:ca48:c8cf:32b4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/fd/lw5s91x96f9...}, goog:chromeOptions: {debuggerAddress: localhost:59613}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd25b392b1d9d9dfb166396ac7955fc2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.util.ElementUtil.waitForTitlePresent(ElementUtil.java:45)
+	at com.qa.hubspot.pages.LoginPage.doLogin(LoginPage.java:50)
+	at com.qa.hubspot.tests.LoginPageTest.loginTest(LoginPageTest.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,7 +50,7 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.hubspot.tests.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.hubspot.tests.LoginPageTest#verifyLoginPagTitleTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">starting verifyLoginPagTitleTest <br/>ending verifyLoginPagTitleTest </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.qa.hubspot.tests.LoginPageTest#verifySignUpLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

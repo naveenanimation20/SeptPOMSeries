@@ -1,0 +1,8 @@
+*.txt
+allure-results/
+*.class
+screenshots/
+target/
+*.classpath
+*.project
+*.html
